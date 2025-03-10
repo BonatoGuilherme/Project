@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Prática</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    
+    <div class="corpo">
+        <h1 class="titulo">AVALIAÇÃO OBJETIVA</h1>
+        <div class="corpo-interno">
+            <p>Informe seu nome</p>
+            <input type="text" id="name" placeholder="Nome">
+            <input type="text" id="sobrenome" placeholder="Sobrenome">
+            <input type="number" id="altura" placeholder="Altura">
+            <input type="number" id="peso" placeholder="Peso">
+            <button onclick="nome();" class="botao">Nome Completo e IMC</button>
+            <p id="imc"></p>
+            <br>
+        </div>
+
+        <div class="corpo-interno">
+            <p class="text-juros">Cálculo de juros composto</p>
+            <input type="number" id="investimento" placeholder="R$ XXXX,XX">
+            <input type="number" id="juros" placeholder="Juros(Mensal)">
+            <input type="number" id="tempo" placeholder="Tempo Investido">
+            <button onclick="calcularJuros()" class="botao">Cacular juros</button>
+        </div>
+        <br>
+        
+        <div>
+            <table class="table">
+                <tr>
+                    <td>Juros composto</td>
+                    <td><p id="resultadoValor"></p></td>
+                </tr>
+                <tr>
+                    <td>Investimento</td>
+                    <td><p id="investimentoValor"></p></td>
+                </tr>
+                <tr>
+                    <td>Juros(%)</td>
+                    <td><p id="jurosValor"></p></td>
+                </tr>
+                <tr>
+                    <td>Tempo(a.a)</td>
+                    <td><p id="tempoValor"></p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
